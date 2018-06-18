@@ -7,7 +7,10 @@
   <link rel="shortcut icon" href="images/favicon(1).ico" type="image/x-icon">
   <title>СТРИТ АРТ МУЗЕЙ</title>
 
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="fonts/Lack.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
+
 </head>
 <body>
 
@@ -158,7 +161,7 @@
 
   <h2 class="header-events"></h2>
   <div class="container">
-    <div class="card">
+    <div class="card content-open-popup">
       <div class="cardtext">«СКАЗОЧНАЯ СТРАНА СТРИТАРТИЯ»: СЕЗОН-2018</div>
       <small>19.05–13.09</small>
       <div class="cardimage image1"></div>
@@ -204,18 +207,32 @@
   </div>
 
 
-  <footer>
-    <div class="footer">
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+  <div class="popup">
+    <div class="popup-content">
+      <span class="popup-close"></span>
+      <h5 class="popup-title">«СКАЗОЧНАЯ СТРАНА СТРИТАРТИЯ»: СЕЗОН-2018</h5>
+      <p class="popup-text">Основная идея масштабного летнего проекта — превратить для зрителя маршрут по выставке в путешествие на грани мифа и реальности, правды и вымысла. Будет обновлена внушительная часть его территории: закрасят прежние работы, а на их месте будут свежие в рамках концепции нового сезона. Уличным искусством в музее не ограничатся: в выставочном пространстве «Котельная» на нескольких этажах разместят инсталляции и арт-объекты.
+      По мнению современного философа Жюли Реше, «арт-пространство наиболее пригодно для интенсивного мифотворчества, ведь оно сродни его стихии, так как, в отличие от науки, не ограничено претензией на объективность».</p>
+      <p class="popup-text">В роли куратора выступает директор музея Андрей Зайцев, а своё участие уже подтвердили Luka Zamoc, Zebu, Dissenso Cognitivo​, Gio Pistone​, Riccardo Murelli, Максим ИМА, Слава ПТРК, Сергей Карев, Николай Сажин, Стас Багс, ZTwins и другие художники. Также для выставки работы сделают подопечные из арт-студии благотворительной организации «Перспективы».</p>
+      <p class="popup-date">19.05–13.09</p>
     </div>
-  </footer>
+  </div>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="javascripts/script.js"></script>
+
+<script type="text/javascript">
+
+$('.content-open-popup').on('click', function(){
+  $('.popup').addClass('isActive');
+});
+
+$('.popup-close').on('click', function(){
+  $('.popup').removeClass('isActive');
+
+});
+
+</script>
 
 </body>
 </html>

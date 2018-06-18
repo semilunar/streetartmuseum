@@ -57,5 +57,4 @@ var speed = 6000;
         requestAnimationFrame(currencySlide);
 })();
 
-
 });
